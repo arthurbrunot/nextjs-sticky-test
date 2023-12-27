@@ -2,6 +2,7 @@ version: '3'
 services:
   nextjs-app:
     container_name: nextjs-app
+    restart: always
     build:
       context: .
       dockerfile: Dockerfile  # Use the Dockerfile for Node.js 18
@@ -9,5 +10,3 @@ services:
       - "12300:3000"  # Map port 3000 from the container to your host
     environment:
       - NODE_ENV=production
-    command: yarn start  # Modify this if your start command is different
-    working_dir: /app
