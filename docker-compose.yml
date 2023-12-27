@@ -11,5 +11,3 @@ services:
       - NODE_ENV=production
     command: yarn start  # Modify this if your start command is different
     working_dir: /app
-    volumes:
-      - ./app:/app  # Mount your Next.js app code into the container
