@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile  # Use the Dockerfile for Node.js 18
     ports:
-      - "3000:3000"  # Map port 3000 from the container to your host
+      - "3000:12300"  # Map port 3000 from the container to your host
     environment:
       - NODE_ENV=production
     command: yarn start  # Modify this if your start command is different
